@@ -27,4 +27,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: latest
+          tags: flowy0/spark-tensorflow-connector:latest
+      - name: Inspect:
+        run: |
+          docker image inspect flowy0/spark-tensorflow-connector:latest
